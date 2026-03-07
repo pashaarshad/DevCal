@@ -1,7 +1,7 @@
 name: devcal
-description: "A new Flutter project."
+description: "DEVCal - Developer Calculator & Tools. A simple, elegant calculator with developer utilities."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0+1
 
 environment:
   sdk: ^3.9.2
@@ -9,11 +9,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^8.0.2
+  math_expressions: ^3.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#1E88E5"
+  adaptive_icon_foreground: "assets/app_icon.png"
